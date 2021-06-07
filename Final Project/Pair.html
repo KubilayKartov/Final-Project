@@ -1,0 +1,117 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <title>Par Spel</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link rel="stylesheet" href="design.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Par Spel</h1>
+        </header>
+
+        <section class="score-panel">
+
+            <!-- Creates a restart function where you can restart the game -->
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+
+        </section>
+
+        <!-- Making a big ul class called deck and inside it li classes and give them all the name/id "card" -->
+
+        <ul class="deck" id="card-deck">
+
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card match" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" type="bolt" >
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card match" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card open show" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+
+        </ul>
+
+        <!-- Popup messagage for completion of the game -->
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+
+                <!-- Popup when you win -->
+
+                <div class="content-1"> <h2>Grattis!</h2> Du är en vinnare! </div>
+
+                <!-- Creates a button with the id play-again and when the button is pressed the game restarts.  --> 
+
+                <button id="play-again"onclick="playAgain()"> Spela igen. </a> </button>
+
+            </div>
+        </div>
+
+    </div>
+
+<!-- Link to javascript file -->
+
+<script src="javascript.js"></script>
+
+</body>
+
+</html>
